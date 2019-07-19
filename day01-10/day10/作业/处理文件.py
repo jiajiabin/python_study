@@ -38,6 +38,9 @@ class Manage:
     def get_dict(self):
         self.dict = Dictionaries()
 
+    def close_file(self):
+        self.__file.close()
+
     def manage_file(self):
         x0 = self.__file.readlines(1)
         self.__cut1(x0)
@@ -73,6 +76,8 @@ class Manage:
 manage = Manage(open("dict.txt", "r", encoding="UTF-8"))
 manage.get_dict()
 manage.manage_file()
+manage.close_file()
+
 print(manage.dict.get_wors_translate("Africa"))
 print(manage.dict.get_wors_translate("Arab"))
 print(manage.dict.get_wors_translate("zo"))
