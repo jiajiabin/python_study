@@ -18,10 +18,15 @@ class Score:
         print("%d/%d" % (self.numerator, self.denominator))
 
     def reduction_fraction(self):
+        sign = 1
+        if self.numerator * self.denominator < 0:
+            sign = -1
+        self.numerator = abs(self.numerator)
+        self.denominator = abs(self.denominator)
         min1 = min(self.numerator, self.denominator)
         for i in range(min1, 1, -1):
             if self.numerator % i == 0 and self.denominator % i == 0:
-                self.numerator /= i
+                self.numerator /= i * sign
                 self.denominator /= i
                 return
 
