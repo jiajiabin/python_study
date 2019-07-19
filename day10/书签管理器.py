@@ -21,6 +21,8 @@ class URLItem:
         return self.__url
     def get_stars(self):
         return self.__stars
+    def get_visits(self):
+        return self.__visits
     def show(self):
         print("".center(30,"="))
         print("标题：{}\n网址：{}\n星级：{}\n访问次数：{}"
@@ -56,7 +58,7 @@ class URLManager:
             print("标题为“{}”的书签不存在，修改失败".format(title))
             return
         else:
-            item.self.__title = new_title
+            item.self.get_title(new_title)
             print("书签修改成功")
     def change_url(self,title,new_url):
         item = self.__find_urlitem(title)
@@ -64,7 +66,7 @@ class URLManager:
             print("标题为“{}”的书签不存在，修改失败".format(title))
             return
         else:
-            item.self.__url = new_url
+            item.self.get_url(new_url)
             print("书签修改成功")
     def change_stars(self,title,new_stars):
         item = self.__find_urlitem(title)
@@ -72,7 +74,7 @@ class URLManager:
             print("标题为“{}”的书签不存在，修改失败".format(title))
             return
         else:
-            item.self.__stars = new_stars
+            item.self.get_stars(new_stars)
             print("书签修改成功")
     def sorting_visits(self):
         n_ls = []
