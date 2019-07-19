@@ -24,7 +24,10 @@ class Dictionaries:
         self.word_dict[word] = Words(word, translate)
 
     def get_wors_translate(self, word):
-        return self.word_dict[word].get_translate()
+        if self.word_dict.get(word):
+            return self.word_dict[word].get_translate()
+        else:
+            return "sorry，字典中找不到此单词"
 
 
 class Manage:
@@ -72,4 +75,4 @@ manage.get_dict()
 manage.manage_file()
 print(manage.dict.get_wors_translate("Africa"))
 print(manage.dict.get_wors_translate("Arab"))
-print(manage.dict.get_wors_translate("zoom"))
+print(manage.dict.get_wors_translate("zo"))

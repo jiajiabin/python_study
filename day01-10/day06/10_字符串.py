@@ -47,6 +47,8 @@ for i in range(1, 10):
         print("{}X{}={}".format(j, i, i * j), end="\t\t")
     print()
 
-
+table = {'Google': 1, 'Runoob': 2, 'Taobao': 3}
+print('Runoob: {0[Runoob]:d}; Google: {0[Google]:d}; Taobao: {0[Taobao]:d}'.format(table))
+print('Runoob: {Runoob:d}; Google: {Google:d}; Taobao: {Taobao:d}'.format(**table))
 
 
