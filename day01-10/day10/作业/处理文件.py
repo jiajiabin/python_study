@@ -1,3 +1,4 @@
+import pickle
 class Words:
     def __init__(self, word, translate):
         self.__word = word
@@ -78,6 +79,9 @@ manage.get_dict()
 manage.manage_file()
 manage.close_file()
 
-print(manage.dict.get_wors_translate("Africa"))
-print(manage.dict.get_wors_translate("Arab"))
-print(manage.dict.get_wors_translate("zo"))
+# print(manage.dict.get_wors_translate("Africa"))
+# print(manage.dict.get_wors_translate("Arab"))
+# print(manage.dict.get_wors_translate("zo"))
+output = open('manage.pkl', 'wb')
+pickle.dump(manage.dict, output)
+output.close()
