@@ -1,5 +1,4 @@
 import pickle
-import 处理文件
 pkl_file = open('manage.pkl', 'rb')
 
 data1 = pickle.load(pkl_file)
