@@ -21,6 +21,8 @@ class Lyric:
 
     def read_lyric(self, path):
         file1 = open(path, "r", encoding="UTF-8")
+        self.__list1.clear()
+        self.__dict1.clear()
         while 1:
             x1 = file1.readlines(1)
             if len(x1) < 1:
