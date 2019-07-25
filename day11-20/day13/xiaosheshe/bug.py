@@ -14,8 +14,8 @@ class Bug:
     def quickly_move(self,points:list):
         while True:
         #随机生成虫子的坐标
-            row = random.randint(1,option.size - 3)
-            col = random.randint(1,option.size - 3)
+            row = random.randint(1,option.size - 2)
+            col = random.randint(1,option.size - 2)
             if (row,col) not in points:
                 break
         self.__point = (row,col)

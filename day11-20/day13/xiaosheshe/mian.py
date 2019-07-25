@@ -1,4 +1,5 @@
 from wall import Wall
+from wall import Radblock
 from displayer import Displayer
 from snake import Snake
 from bug import Bug
@@ -9,6 +10,7 @@ import msvcrt
 displayer = Displayer()
 wall = Wall()
 snake = Snake()
+radblock = Radblock()
 bug = Bug(snake.points)
 
 running = True
@@ -42,9 +44,11 @@ while running:
 
     #将墙的坐标导入
     displayer.extend_points(wall.points)
+    displayer.extend_points(radblock.points)
 
     #绘制图像
     displayer.draw_graphics(snake.score,snake.points,bug.point)
     #清屏
     displayer.clear()
-    time.sleep(snake.sleep_time)
+    #time.sleep(snake.sleep_time)
+    time.sleep(1)
