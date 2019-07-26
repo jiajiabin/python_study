@@ -191,16 +191,24 @@ def preset_map():
 
 if __name__ == '__main__':
     # 判断在控制台输入的参数时候达到要求
-    if len(sys.argv) < 6:
-        raise Exception('参数格式：文件名 x1 y1 x2 y2   其中x1 y1代表开始坐标，x2 y2代表目标坐标')
-        #raise Exception()
-    else:
+    # if len(sys.argv) < 6:
+    #     raise Exception('参数格式：文件名 x1 y1 x2 y2   其中x1 y1代表开始坐标，x2 y2代表目标坐标')
+    #     #raise Exception()
+    # else:
         # 从控制台读取参数
-        readfile(sys.argv[1])
-        start_x = int(sys.argv[2])
-        start_y = int(sys.argv[3])
-        end_x = int(sys.argv[4])
-        end_y = int(sys.argv[5])
+        # readfile(sys.argv[1])
+        # start_x = int(sys.argv[2])
+        # start_y = int(sys.argv[3])
+        # end_x = int(sys.argv[4])
+        # end_y = int(sys.argv[5])
+        # start = Node(None, start_x, start_y)
+        # end = Node(None, end_x, end_y)
+
+        readfile("a002.txt")
+        start_x = int(0)
+        start_y = int(0)
+        end_x = int(4)
+        end_y = int(0)
         start = Node(None, start_x, start_y)
         end = Node(None, end_x, end_y)
 

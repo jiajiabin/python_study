@@ -1,14 +1,7 @@
-import threading
-import time
 
-class MyThread(threading.Thread):
-    def run(self):
-        for i in range(10):
-            print("Hellow")
-            time.sleep(1)
 
-thread = MyThread()
-thread.start()
+line = "5    3"
+map_size = line.split()
+map_size = list(map(int, map_size))
+print(map_size)
 
-for i in range(10):
-    time.sleep(0.8)
