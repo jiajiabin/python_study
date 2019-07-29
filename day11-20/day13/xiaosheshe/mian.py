@@ -47,7 +47,7 @@ while running:
     displayer.extend_points(radblock.points)
 
     #绘制图像
-    displayer.draw_graphics(snake.score,snake.points,bug.point)
+    displayer.draw__graphics(snake.score,snake.points,bug.point)
     #清屏
     displayer.clear()
     #time.sleep(snake.sleep_time)

@@ -55,18 +55,16 @@ def min_F_node():
 
     _min = 9999999999999999
     _k = (start.x, start.y)
-
     # 以列表的形式遍历open_list字典
     for k, v in open_list.items():
         if _min > v.F:
             _min = v.F
             _k = k
-
     return open_list[_k]
 
 
 # 把相邻的节点加入到open_list之中，如果发现终点说明找到终点
-def addAdjacentIntoOpen(node):
+def addAdjacentIntoOpen(node, end):
     global open_list, close_list
 
     # 首先将该节点从开放列表移动到关闭列表之中
@@ -126,7 +124,7 @@ def find_the_path(start, end):
 
     the_node = start
     try:
-        while not addAdjacentIntoOpen(the_node):
+        while not addAdjacentIntoOpen(the_node, end):
             the_node = min_F_node()
 
     except Exception as err:
@@ -204,11 +202,11 @@ if __name__ == '__main__':
         # start = Node(None, start_x, start_y)
         # end = Node(None, end_x, end_y)
 
-        readfile("a002.txt")
+        readfile("001.txt")
         start_x = int(0)
-        start_y = int(0)
-        end_x = int(4)
-        end_y = int(0)
+        start_y = int(1)
+        end_x = int(19)
+        end_y = int(14)
         start = Node(None, start_x, start_y)
         end = Node(None, end_x, end_y)
 
