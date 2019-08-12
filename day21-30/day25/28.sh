@@ -1,0 +1,2 @@
+ret=`ls`
+echo $ret
