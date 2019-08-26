@@ -1,0 +1,82 @@
+h系列 1>2>3....>6  :网页内容的标题
+p:段落标签  
+hr:水平线
+br:换行
+b:加粗 i:倾斜 u:下划线 s:删除线
+img:图片
+	src="路径"
+	alt="加载失败就显示"
+	title="悬停显示的信息"
+a标签:
+	href="网址 或者 路径"   网址:http://
+	target="打开方式"  _self  _blank  
+	
+锚点:在当前页 跳到指定位置
+
+	<a href="#four_p">点击</a>
+	<p></p>
+	<p></p>
+	<p></p
+	<p id="four_p"></p>
+	<p></p>
+	
+列表:
+	有序:ol里面只能有li  li里面可以有任何东西
+		<ol>
+			<li></li>
+		</ol>
+	无序:
+		<ul>
+			<li></li>
+		</ul>
+	自定义:dl包裹列表标签用的  dt列表头 dd列表项
+		<dl>
+			<dt></dt>  
+			<dd></dd>
+			
+			<dt></dt>  
+			<dd></dd>
+			
+			<dt></dt>  
+			<dd></dd>
+		</dl>
+		
+表格:很早之前用来网页布局的
+
+	<table width height border cellpadding  cellspacing>
+	
+		<tr>  行
+			<td></td>  列
+			<td></td>
+			<td></td>
+		</tr>
+	
+	</table>
+	
+
+表单项:
+	<input type=""/>
+	type="text"
+	type="password"
+	type="radio"  name="分组"  checked="checked"
+	type="checkbox"  checked="checked"
+	type="button"  value="按钮字样"
+	type="submit"
+	
+	文本域:<textarea></textarea>
+	
+	下拉列表:
+	<select>
+		<option><option>
+		<option><option>
+		<option><option>
+	</select>
+	
+	
+包裹表单的:
+<form action="" method="get / post"></form>
+
+如果让 单选框 复选框 下拉菜单的值  提交上去 :
+	必须有 name和value
+	
+	

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>打印名片</title>
+		<link id="cha" rel="stylesheet" type="text/css" href="01.css"/>
+		<style type="text/css">
+			*{margin: 0;padding: 0;}
+			.big{
+				width: 900px;
+				height: 400px;
+				margin: 50px auto;
+				border: #000000 1px solid;
+			}
+			.one{
+				width: 299px;
+				height: 400px;
+				float: left;
+				border-right: #000000 1px solid;
+			}
+			.two{
+				width: 600px;
+				height: 400px;
+				float: left;
+			}
+			.input{
+				width: 265px;
+				height: 32px;
+				margin: 10px auto;
+				font-size: 12px;
+				line-height: 32px;
+			}
+			.one1{margin-top: 30px;}
+			.text,select{
+				width: 200px;
+				height: 30px;
+				border-radius:5px;
+				float: right;
+				border: #000000 1px solid;
+				outline: none;
+				text-indent: 10px;
+			}
+			select{width: 203px;
+				height: 32px;}
+			.button{
+				width: 100px;
+				height: 40px;
+				border-radius:5px;
+				background-color: #0181CC;
+				color: white;
+				font-size: 20px;
+				border: none;
+				text-align: center;
+				line-height: 40px;
+			}
+			.butt{width: 100px;height: 40px;margin: 20px auto;}
+			.two1{width: 450px;height: 270px;margin:65px auto;border:#DDDDDD 1px solid;background-repeat: no-repeat;}
+		</style>
+	</head>
+	<body>
+		<div class="big">
+			<div class="one">
+				
+				<div class="input one1">姓名：<input class="text" id="name1" type="text" placeholder="张三"></div>
+				<div class="input">职位：<input class="text" id="zhiwei1" type="text" placeholder="学生"></div>
+				<div class="input">公司名称：<input class="text" id="gongsi1" type="text" placeholder="千锋教育"></div>
+				<div class="input">手机：<input class="text" id="phone1" type="texid="zhiwei1" t" placeholder="18088888888"></div>
+				<div class="input">email：<input class="text" id="email1" type="text" placeholder="zhangsan@163.com"></div>
+				<div class="input">地址：<input class="text" id="dizhi1" type="text" placeholder="江夏区智慧园校区"></div>
+				<div class="input">风格：<select id="feng" name="fengge1">
+											<option value="1">风格一</option>
+											<option value="2">风格二</option>
+											<option value="3">风格三</option>
+										</select>
+
+				</div>
+				<div class="butt"><input class="button" type="button" onclick="func1()" value="设置"></div>
+			</div>
+			<div class="two">
+				<div class="two1">
+					<h2 id="name2">张大山</h2>
+					<p id="zhiwei2" class="a">产品经理</p>
+					<h3 id="gongsi2" >银河科技信息技术有限公司</h3>
+					<p class="b" id="phone2">手机：1808888888</p>
+					<p class="c" id="email2">email：dasan@126.com</p>
+					<p class="d" id="dizhi2" >地址：中关村银河大厦B座2603</p>
+				</div>
+			</div>
+			
+			<script type="text/javascript">
+				change = document.getElementById("cha")
+				fengge = document.getElementById("feng")
+				byname = document.getElementById("name1")
+				toname = document.getElementById("name2")
+				byzhiwei = document.getElementById("zhiwei1")
+				tozhiwei = document.getElementById("zhiwei2")
+				bygongsi = document.getElementById("gongsi1")
+				togongsi = document.getElementById("gongsi2")
+				byphone = document.getElementById("phone1")
+				tophone = document.getElementById("phone2")
+				byemail = document.getElementById("email1")
+				toemail = document.getElementById("email2")
+				bydizhi = document.getElementById("dizhi1")
+				todizhi = document.getElementById("dizhi2")
+				function func1(){
+					switch(fengge.value){
+						case "1":
+							change.href = "01.css"
+							break
+						case "2":
+							change.href = "02.css"
+							break
+						case "3":
+							change.href = "03.css"
+							break
+					}
+					if (byname.value) {
+						toname.innerText = byname.value
+					} else{
+						toname.innerText = byname.placeholder
+					}
+					if (byzhiwei.value) {
+						tozhiwei.innerText = byzhiwei.value
+					} else{
+						tozhiwei.innerText = byzhiwei.placeholder
+					}
+					if (bygongsi.value) {
+						togongsi.innerText = bygongsi.value
+					} else{
+						togongsi.innerText = bygongsi.placeholder
+					}
+					if (byphone.value) {
+						tophone.innerText = byphone.value
+					} else{
+						tophone.innerText = byphone.placeholder
+					}
+					if (byemail.value) {
+						toemail.innerText = byemail.value
+					} else{
+						toemail.innerText = byemail.placeholder
+					}
+					if (bydizhi.value) {
+						todizhi.innerText = bydizhi.value
+					} else{
+						todizhi.innerText = bydizhi.placeholder
+					}
+				}
+			</script>
+		</div>
+	</body>
+</html>

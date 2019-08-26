@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	
+</head>
+<body>
+	<button type="button" id="btn" onclick="func_1()">点我呀</button> <!-- 点击按钮 然后弹窗 -->
+	<script>
+		//1.拿对象
+		var btn = document.getElementById("btn")
+		
+		
+		
+		//2.用对象
+		//onclick 点击事件
+		// btn.onclick = function(){
+		// 	alert("触发了")
+		// }
+		
+		function func_1(){
+			alert("行内的事件触发")
+		}
+		
+	</script>
+</body>
+</html>

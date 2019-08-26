@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		#box{
+
+			height: 82px;
+			width: 600px;
+			border: 1px solid black;
+			position: relative;  /*相对定位*/
+
+
+		}
+
+		#ball{
+
+			height: 80px;
+			width: 80px;
+			border-radius: 40px;  /*圆*/
+			background: blue;
+			position: absolute;
+			left: 0;
+
+		}
+
+
+
+
+	</style>
+	<script>
+		//入口函数
+		window.onload = function(){
+			//1.先获取对象
+			var box = document.getElementById("box")
+			var ball = document.getElementById("ball")
+			//获取的宽 不要直接用做算数操作
+			//console.log(window.getComputedStyle(box,null).width-window.getComputedStyle(ball,null).width)
+			//获取边界的值
+			var bian_jie = 520
+			//2.定时器移动
+			var num = 0  // 起始位置
+			var speed = 5  // 递增数:默认为正数
+			setInterval(function(){
+				
+				// 到 520  递减
+				if (num >=bian_jie){  // 0>=520 5>520 10>520 .... 520 >= 520 515>=520
+					speed = -5   // 此时speed 变为 负数了
+				}
+				if(num <= 0){
+					speed = 5
+				}
+				
+				
+				num += speed  // 0+=5:5 5+=5:10  10+=5:15 .......515+=5:520  520+=-5:515  515+=-5:510
+				ball.style.left=num +"px"  
+			},50)
+		}
+	</script>
+
+</head>
+<body>
+	<div  id="box">
+		
+		<div id="ball"></div>
+
+	</div>
+
+
+	
+</body>
+</html>

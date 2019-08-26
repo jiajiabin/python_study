@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		button{
+			background-color: yellow;
+		}
+	</style>
+	<script>
+		window.onload=function(){
+			var btns =document.getElementsByTagName("button")
+			
+			//遍历
+			// 注意点:for循环里面 如果有事件 那么 会出问题:事件内部 拿循环的变量 永远拿的是最后一个
+			for(var i = 0;i<btns.length;i++){
+				btns[i].onclick = function(){  //依次绑定事件  
+					// console.log(i)  // 8
+					// btns[i].style.backgroundColor = "red"
+					this.style.backgroundColor="red"  //this就当前被点击的对象
+					
+					//只给当前的自己设置红色 其他的还是黄色
+					for(var j = 0;i<btns.length;j++){
+						if (btns[j] != this){  // 只要不是当前 就改颜色
+							btns[j].style.backgroundColor="yellow"
+						}
+					}
+					
+				}
+			}
+		}
+
+	</script>
+</head>
+<body>
+	<button>按钮1</button>
+	<button>按钮2</button>
+	<button>按钮3</button>
+	<button>按钮4</button>
+	<button>按钮5</button>
+	<button>按钮6</button>
+	<button>按钮7</button>
+	<button>按钮8</button>
+
+</body>
+</html>

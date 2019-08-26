@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	
+</head>
+<body>
+	<div id="a"></div>
+	<script type="text/javascript">
+		//1.拿到标签对象
+		var h_1 = document.getElementById("a")  // 拿到元素 通过id  返回一个元素的对象
+		console.log(h_1)
+		//2.利用对象来操作
+		h_1.innerHTML = "<h1>哈哈哈</h1>"
+		h_1.innerHTML += "嘿嘿"  // ====>h_1.innerHTML = h_1.innerHTML + ??
+		
+		h_1.style.backgroundColor = "red"
+		h_1.style.width="100px"
+		
+	</script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		#box1{
+
+			height: 200px;
+			width: 200px;
+			background: blue;
+			border: 2px solid black;
+
+
+		}
+		
+
+
+
+
+	</style>
+	
+
+
+	<script type="text/javascript">
+
+		
+		window.onload = function(){
+			// 语法格式1
+			//1.获取元素对象
+			// var box1 = document.getElementById("box1")
+			// var btn = document.getElementById("btn")
+			// btn.onclick = change_color // 要的是 函数名 ====>函数的指向,事件一触发 就根据指向 找到函数 然后自动执行
+			// 
+			// function change_color(){
+			// 	box1.style.backgroundColor = "red"
+			// }
+			
+			
+			
+			//语法格式2:window.getComputedStyle(元素对象, 伪类).样式属性    伪类暂时不用 管  就写 null
+			// var box1 = document.getElementById("box1")
+			// var btn = document.getElementById("btn")
+			// btn.onclick = change_color // 要的是 函数名 ====>函数的指向,事件一触发 就根据指向 找到函数 然后自动执行
+			// 
+			// function change_color(){
+			// 	// 这个数获取 元素属性的方法
+			// 	console.log(window.getComputedStyle(box1,null).backgroundColor)
+			// 	
+			// }
+			
+			
+			var box1 = document.getElementById("box1")
+			var btn = document.getElementById("btn")
+			btn.onclick = change_color // 要的是 函数名 ====>函数的指向,事件一触发 就根据指向 找到函数 然后自动执行
+			
+			
+			
+			
+			
+		}
+		
+
+	</script>
+
+	
+</head>
+<body>
+	<div id="box1"> <!--  行内样式的权重 高于 id选择器  所以我们可以通过js 操作 style属性的值 达到修改的目的 -->
+		
+	</div>
+	<button id="btn">点我换颜色 </button>
+
+
+
+</body>
+</html>

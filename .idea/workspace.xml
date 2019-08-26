@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="55185c1f-3d98-4a29-804d-6b397521e245" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/day21-30/GitHub入门与实践.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day21-30/day27/parse.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day21-30/笔记-Git分布式版本控制系统 - (1).docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/python_study.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/python_study.iml" afterDir="false" />
+    <list default="true" id="55185c1f-3d98-4a29-804d-6b397521e245" name="Default Changelist" comment="8月17日">
+      <change afterPath="$PROJECT_DIR$/../exercise/01.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exercise/02.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exercise/03.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exercise/04.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exercise/05.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exercise/06.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day21-30/day30/01_redis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercise/03_book/bookinfo.py" beforeDir="false" afterPath="$PROJECT_DIR$/../exercise/03_book/bookinfo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercise/03_book/requestbook.py" beforeDir="false" afterPath="$PROJECT_DIR$/../exercise/03_book/requestbook.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercise/03_book/write.py" beforeDir="false" afterPath="$PROJECT_DIR$/../exercise/03_book/write.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,6 +42,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -45,6 +53,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../exercise" />
@@ -56,7 +65,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -82,7 +91,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.01 (2)">
+  <component name="RunManager" selected="Python.05">
     <configuration default="true" type="DjangoTestsConfigurationType">
       <module name="work" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -129,51 +138,7 @@
       <option name="ADDITIONAL_ARGS" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="01 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="exercise" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../exercise" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../exercise/01.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="01 (2)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="python_study" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day21-30/day29" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day21-30/day29/01.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="01" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="02" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="exercise" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -186,7 +151,95 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../exercise/03_book/01.py" />
+      <option name="SCRIPT_NAME" value="F:\exercise\02.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="03 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="exercise" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../exercise" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../exercise/03.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="03" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="exercise" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../exercise/03_book" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="F:\exercise\03.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="04" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="exercise" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../exercise" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../exercise/04.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="05" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="exercise" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../exercise" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../exercise/05.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -209,50 +262,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="bookinfo" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="exercise" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../exercise/03_book" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../exercise/03_book/bookinfo.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="tk" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="exercise" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../exercise/02_pacman" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../exercise/02_pacman/tk.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -322,11 +331,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.01 (2)" />
-        <item itemvalue="Python.tk" />
-        <item itemvalue="Python.bookinfo" />
-        <item itemvalue="Python.01" />
-        <item itemvalue="Python.01 (1)" />
+        <item itemvalue="Python.05" />
+        <item itemvalue="Python.04" />
+        <item itemvalue="Python.03 (1)" />
+        <item itemvalue="Python.03" />
+        <item itemvalue="Python.02" />
       </list>
     </recent_temporary>
   </component>
@@ -384,7 +393,18 @@
       <workItem from="1565694206338" duration="5191000" />
       <workItem from="1565765729742" duration="13892000" />
       <workItem from="1565783615330" duration="2913000" />
-      <workItem from="1565830854187" duration="21559000" />
+      <workItem from="1565830854187" duration="24703000" />
+      <workItem from="1565866898421" duration="6418000" />
+      <workItem from="1565938093694" duration="15344000" />
+      <workItem from="1566003918412" duration="13056000" />
+      <workItem from="1566301109204" duration="5163000" />
+      <workItem from="1566391185162" duration="1435000" />
+      <workItem from="1566444043719" duration="1858000" />
+      <workItem from="1566472654426" duration="2788000" />
+      <workItem from="1566633518475" duration="7488000" />
+      <workItem from="1566800446945" duration="156000" />
+      <workItem from="1566800782741" duration="1046000" />
+      <workItem from="1566818252345" duration="23000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1563447260884</created>
@@ -512,7 +532,21 @@
       <option name="project" value="LOCAL" />
       <updated>1565860327397</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="8月17日">
+      <created>1565860544326</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1565860544326</updated>
+    </task>
+    <task id="LOCAL-00020" summary="随笔">
+      <created>1565873423014</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1565873423014</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -559,13 +593,14 @@
     <MESSAGE value="1" />
     <MESSAGE value="8月12日" />
     <MESSAGE value="8月17日" />
-    <option name="LAST_COMMIT_MESSAGE" value="8月17日" />
+    <MESSAGE value="随笔" />
+    <option name="LAST_COMMIT_MESSAGE" value="随笔" />
     <option name="UPDATE_GROUP_BY_PACKAGES" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/python_study$__1_.coverage" NAME="处理文件 (1) Coverage Results" MODIFIED="1563593036870" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day01-10/day10/作业" />
     <SUITE FILE_PATH="coverage/python_study$TCPClient.coverage" NAME="TCPClient Coverage Results" MODIFIED="1564475625243" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day11-20/day17/TCP" />
-    <SUITE FILE_PATH="coverage/python_study$01__1_.coverage" NAME="01 (1) Coverage Results" MODIFIED="1565787417550" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../exercise" />
+    <SUITE FILE_PATH="coverage/python_study$01__1_.coverage" NAME="01 (1) Coverage Results" MODIFIED="1566006495718" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../exercise/04_qidian" />
     <SUITE FILE_PATH="coverage/python_study$MovieInfoManager__1_.coverage" NAME="MovieInfoManager (1) Coverage Results" MODIFIED="1564398332996" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day11-20/day16" />
     <SUITE FILE_PATH="coverage/python_study$mian.coverage" NAME="mian Coverage Results" MODIFIED="1564736945692" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../exercise/pacman" />
     <SUITE FILE_PATH="coverage/python_study$3_.coverage" NAME="3_打印图形 Coverage Results" MODIFIED="1563442273561" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day08/作业" />
@@ -574,11 +609,12 @@
     <SUITE FILE_PATH="coverage/python_study$Animation.coverage" NAME="Animation Coverage Results" MODIFIED="1564632800622" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day11-20/day19/小例子" />
     <SUITE FILE_PATH="coverage/python_study$1_.coverage" NAME="1_分数类 Coverage Results" MODIFIED="1563444322991" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day09/作业" />
     <SUITE FILE_PATH="coverage/python_study$.coverage" NAME="处理文件 Coverage Results" MODIFIED="1565178763605" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day01-10/day10/作业" />
-    <SUITE FILE_PATH="coverage/python_study$03.coverage" NAME="03 Coverage Results" MODIFIED="1565780666632" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day21-30/day28/homework" />
-    <SUITE FILE_PATH="coverage/python_study$bookinfo.coverage" NAME="bookinfo Coverage Results" MODIFIED="1565841262927" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../exercise/03_book" />
+    <SUITE FILE_PATH="coverage/python_study$03.coverage" NAME="03 Coverage Results" MODIFIED="1566445257364" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../exercise/03_book" />
+    <SUITE FILE_PATH="coverage/python_study$bookinfo.coverage" NAME="bookinfo Coverage Results" MODIFIED="1566028173410" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../exercise/03_book" />
     <SUITE FILE_PATH="coverage/python_study$displayer__1_.coverage" NAME="displayer (1) Coverage Results" MODIFIED="1563937089734" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day11-20/day13/xiaosheshe" />
     <SUITE FILE_PATH="coverage/python_study$04_.coverage" NAME="04_查看数据 Coverage Results" MODIFIED="1565771872898" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day21-30/day28" />
     <SUITE FILE_PATH="coverage/python_study$tk.coverage" NAME="tk Coverage Results" MODIFIED="1565848973757" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../exercise/02_pacman" />
+    <SUITE FILE_PATH="coverage/python_study$03__1_.coverage" NAME="03 (1) Coverage Results" MODIFIED="1566637084112" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../exercise" />
     <SUITE FILE_PATH="coverage/python_study$ai.coverage" NAME="ai Coverage Results" MODIFIED="1564222231845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../exercise/pacman" />
     <SUITE FILE_PATH="coverage/python_study$mychat_server.coverage" NAME="mychat_server Coverage Results" MODIFIED="1564562254092" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../MyChat" />
     <SUITE FILE_PATH="coverage/python_study$suanfa.coverage" NAME="suanfa Coverage Results" MODIFIED="1564219214631" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day11-20/day13" />
@@ -587,18 +623,23 @@
     <SUITE FILE_PATH="coverage/python_study$TCPServer.coverage" NAME="TCPServer Coverage Results" MODIFIED="1564475416114" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day11-20/day17/TCP" />
     <SUITE FILE_PATH="coverage/python_study$mychat_client.coverage" NAME="mychat_client Coverage Results" MODIFIED="1564563058883" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../MyChat" />
     <SUITE FILE_PATH="coverage/python_study$01_MySQL_test.coverage" NAME="01_MySQL_test Coverage Results" MODIFIED="1565780245577" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day21-30/day28" />
-    <SUITE FILE_PATH="coverage/python_study$01__2_.coverage" NAME="01 (2) Coverage Results" MODIFIED="1565859578808" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day21-30/day29" />
+    <SUITE FILE_PATH="coverage/python_study$01__2_.coverage" NAME="01 (2) Coverage Results" MODIFIED="1566302121936" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../exercise" />
     <SUITE FILE_PATH="coverage/python_study$MovieInfoManager.coverage" NAME="MovieInfoManager Coverage Results" MODIFIED="1564391173722" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../MySpider" />
-    <SUITE FILE_PATH="coverage/python_study$02.coverage" NAME="02 Coverage Results" MODIFIED="1565774829026" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day21-30/day28/homework" />
+    <SUITE FILE_PATH="coverage/python_study$setpassword.coverage" NAME="setpassword Coverage Results" MODIFIED="1566035460790" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../exercise/04_wifipojie" />
+    <SUITE FILE_PATH="coverage/python_study$02.coverage" NAME="02 Coverage Results" MODIFIED="1566302941291" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../exercise/03_book" />
     <SUITE FILE_PATH="coverage/python_study$UDPClient.coverage" NAME="UDPClient Coverage Results" MODIFIED="1564476838914" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day11-20/day17/UDP" />
     <SUITE FILE_PATH="coverage/python_study$03_MySQL_.coverage" NAME="03_MySQL 插入数据 Coverage Results" MODIFIED="1565771139930" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day21-30/day28" />
+    <SUITE FILE_PATH="coverage/python_study$05.coverage" NAME="05 Coverage Results" MODIFIED="1566638640368" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../exercise" />
     <SUITE FILE_PATH="coverage/python_study$student_manager.coverage" NAME="student_manager Coverage Results" MODIFIED="1564043712536" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day11-20/day14/format_print" />
     <SUITE FILE_PATH="coverage/python_study$whiteintxt.coverage" NAME="whiteintxt Coverage Results" MODIFIED="1564409573218" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day11-20/day16/作业" />
     <SUITE FILE_PATH="coverage/python_study$parse.coverage" NAME="parse Coverage Results" MODIFIED="1565676873267" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../day27/work" />
+    <SUITE FILE_PATH="coverage/python_study$1_2_12.coverage" NAME="1.2.12 Coverage Results" MODIFIED="1565872969995" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../exercise" />
     <SUITE FILE_PATH="coverage/python_study$displayer.coverage" NAME="displayer Coverage Results" MODIFIED="1563934925984" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day11-20/day13/小蛇蛇" />
-    <SUITE FILE_PATH="coverage/python_study$04.coverage" NAME="04 Coverage Results" MODIFIED="1565781436728" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day21-30/day28/homework" />
-    <SUITE FILE_PATH="coverage/python_study$01.coverage" NAME="01 Coverage Results" MODIFIED="1565838719885" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../exercise/03_book" />
+    <SUITE FILE_PATH="coverage/python_study$01.coverage" NAME="01 Coverage Results" MODIFIED="1565958833659" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../exercise/04_music" />
+    <SUITE FILE_PATH="coverage/python_study$04.coverage" NAME="04 Coverage Results" MODIFIED="1566638520088" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../exercise" />
+    <SUITE FILE_PATH="coverage/python_study$pojiewifi.coverage" NAME="pojiewifi Coverage Results" MODIFIED="1566036441850" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../exercise/04_wifipojie" />
     <SUITE FILE_PATH="coverage/python_study$02_Mysql.coverage" NAME="02_Mysql创建表单 Coverage Results" MODIFIED="1565769663768" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day21-30/day28" />
     <SUITE FILE_PATH="coverage/python_study$UDPServer.coverage" NAME="UDPServer Coverage Results" MODIFIED="1564476585129" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day11-20/day17/UDP" />
+    <SUITE FILE_PATH="coverage/python_study$01_redis.coverage" NAME="01_redis Coverage Results" MODIFIED="1565946917953" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day21-30/day30" />
   </component>
 </project>

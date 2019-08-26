@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			.a{
+				width: 200px;
+				height: 200px;
+				border: 1px black solid;
+				padding: 20px;
+				margin: 20px;
+			}
+			.b{
+				height: 200px;
+				border: 1px black solid;
+				padding: 50px;
+				margin: -20px;
+			}
+			
+			.big{
+				width: 400px;
+				height: 300px;
+				padding:100px ;
+				border: 1px black solid;
+			}
+			.small{
+				
+				height: 50px;
+				
+				border: 1px black solid;
+				padding: -50px;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 定宽盒子 横向填充 会影响盒子大小-->
+		<div class="a"></div>
+		
+		<!-- 不定宽盒子 横向填充 不会影响盒子大小 -->
+		<div class="b"></div>
+		
+		<div class="big">
+			<div class="small"></div>
+		</div>
+	</body>
+</html>

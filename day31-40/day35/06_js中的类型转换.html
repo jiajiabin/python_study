@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+		
+		var a = "10"
+		var new_a = parseInt(a)   
+		console.log(typeof a)  // 不能变更数据源
+		console.log(typeof new_a)   // 产生一个新的 数据 满足我们的需求
+		//******************************************************************************************
+		var b = "10.9"
+		var new_b = parseInt(b)  // 当小数内容的 字符串  parseInt 会省略小数位
+		console.log(new_b)
+		
+		new_b = parseFloat(b)  // 保留原来的真实数据
+		console.log(new_b)
+		//******************************************************************************************
+		// 转成字符串
+		var c = 10
+		// c = c+""
+		// console.log(typeof c)
+		c = toString(c)
+		console.log(typeof c)
+		
+		
+		
+		
+
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

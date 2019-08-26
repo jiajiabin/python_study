@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		#box1{
+			width: 200px;
+			height: 200px;
+			background: red;
+		}
+		
+		
+	</style>
+	<script type="text/javascript">
+		
+		// 什么是定时器: 闹钟:每个24个小时 响一次
+		// 1.只执行一次的定时器
+		// 参数1:需要一个函数名 只是名字  这个函数 由定时器 根据 时间去启动
+		// 参数2:给定 执行的时间  单位:毫秒
+		// window.setTimeout(func,2000)
+		// function func(){
+		// 	alert("我是单次执行的 定时器 功能")
+		// }
+	
+		// 2.一直重复执行的定时器
+		
+		// window.setInterval(函数名,毫秒值)
+		// 参数1:需要一个函数名 只是名字  这个函数 由定时器 根据 时间去启动
+		// 参数2:给定 执行的时间  单位:毫秒
+		// window.setInterval(function(){
+		// 	alert("我是重复执行的")
+		// },2000)
+		
+		
+		// 清空定时器
+		//window.clearInterval(定时器名字)   // 清空重复定时器的
+		//window.clearTimeout(定时器名字)    // 清空单次定时器的
+		
+		//让div 每隔 50 毫秒 跨度增加 透明度变低  如果透明到 一半 就 停止
+		window.onload= function(){
+			var box1 = document.getElementById("box1")
+			num = 200  //初始值 200
+			num2 = 1
+			var timer= setInterval(function(){// 这个函数会每50毫秒执行一次
+				console.log("执行")
+				num+=5  // 每50毫秒 就 增加5
+				num2-=0.02
+				if (num2<0.5){
+					//马上停
+					// return  // 这个不行 只能让函数到 这一行停止 但是还是会继续调用 我们要做的是 清空定时器
+					window.clearInterval(timer)
+					
+				}
+				box1.style.width = num+ "px"  // 设置宽度
+				box1.style.opacity =num2+""   // 设置透明度
+			},50)
+		}
+		
+		
+		
+	</script>
+</head>
+<body>
+	
+	<div id="box1"></div>
+	
+</body>
+</html>

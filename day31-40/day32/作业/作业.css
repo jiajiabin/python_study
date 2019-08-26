@@ -1,0 +1,40 @@
+div{
+	margin: 0 auto;
+}
+a{
+	color: #0000EE;
+}
+.wangye{
+	color:#000000;
+}
+.out{
+	width: 550px;
+}
+.one{
+	width: 170px;
+}
+.two{
+	text-align: center;
+	font-size: 18px;
+}
+.three{
+	text-align: center;
+}
+.three_one{
+	width: 425px;
+	height: 33px;
+}
+.three_two{
+	width: 100px;
+	height: 40px;
+}
+.four{
+	text-align: center;
+	font-size: 13px;
+	line-height: 20px;
+}
+.last{
+	text-align: center;
+	font-size: 12px;
+	color: #999999;
+}

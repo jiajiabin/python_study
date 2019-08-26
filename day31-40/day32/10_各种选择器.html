@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			div{  /*不能设置差异化*/
+				height: 100px;
+				width: 100px;
+				
+			}
+			/*把差异化的 属性值 放在类选择器中*/
+			.one{
+				background-color: red;
+			}
+			.two{
+				background-color:blue ;
+				
+			}
+			.three{
+				background-color: orange;
+				
+			}
+			.other{
+				border: solid black 1px;
+			}
+			#last{   /* #id名称来适配  */
+				height: 150px;
+				width: 150px;
+				background: pink;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="one"></div>  <!--给每个div一个不同的类名-->
+		<div class="two"></div>
+		<div class="three"></div>
+		<div class="three other" ></div>  <!--类名和之间 空格隔开-->
+		<div id="last"></div>
+		
+		
+	</body>
+</html>

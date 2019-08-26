@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+				border: none;
+			}
+			
+			.big{
+				width: 279px;
+				height: 253px;
+				border: #186B07 2px solid;
+				margin: 50px auto 0;  /*上50 左右平分 下给0*/
+			}
+			.big h3{
+				height: 40px;
+				background-image: url(bg.jpg);
+				font-size: 16px;
+				color: white;
+				line-height: 40px;
+				padding-left: 18px;
+				
+				
+			}
+			
+			.big p{
+				height: 31px;
+				/* border: #000000 solid 1px; */
+				margin-top: 14px;
+				padding-left: 20px;
+				font-size: 14px;
+			}
+			.big p input{
+				border: #A9A9A9 1px solid;
+				height: 31px;
+				margin-left: 10px;
+			}
+			.remenber{
+				height: 32px;
+				/* border: 1px solid black; */
+				padding-left: 73px;
+				padding-top: 8px;
+			}
+			.remenber input{
+				vertical-align: middle;  /*input的 选框 和后面的文字 中线对齐 */
+			}
+			.remenber span{
+				color: #666666;
+				font-size: 14px;
+				
+			}
+			.last{
+				height: 38px;
+				/* border: 1px solid black; */
+				padding-left: 60px;
+			}
+			.last button{
+				width: 82px;
+				height: 30px;
+				background-image: url(btnBg.jpg);
+				color: #FFFFFF;
+				font-size: 14px;
+				font-weight: bold;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="big">
+			<h3>用户登录</h3>
+			<p>用户名:<input type="text" name="" id="" value="" /></p>
+			<p>密&nbsp;&nbsp;&nbsp;码:<input type="password"/></p>
+			<p >验证码:<input type="text" id="" value=""  style="width: 74px;"/></p>
+			<div class="remenber">
+				<input type="checkbox" id="" value="" />
+				<span>记住密码</span>
+			</div>
+			<div class="last">
+				<button type="button">登录</button>
+				<button type="button" style="margin-left: 18px;">重置</button>
+			</div>
+		</div>
+		
+		
+	</body>
+</html>

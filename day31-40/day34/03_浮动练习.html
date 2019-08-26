@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+		.big{
+			width: 980px;
+			height: 600px;
+			border: #000000 1px solid;
+			margin: 0 auto;
+		}
+		.one{
+			width: 100px;
+			height: 100px;
+			background-color: red;
+			float: left;
+			
+		}
+		.two{
+			width: 100px;
+			height: 100px;
+			background-color: green;
+			float: right;
+			
+		}
+		/*
+		1.只要容器内部的元素 又一个 实现了 浮动 并列的所有盒子 都建议使用float
+		2.块级元素 使用了浮动 就自动变成 行内块了
+		
+		*/
+		</style>
+	</head>
+	<body>
+		<div class="big">
+			<div class="one"></div>
+			<div class="two"></div>
+			
+		</div>
+	</body>
+</html>

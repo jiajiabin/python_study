@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.father{
+				width: 500px;
+				height: 500px;
+				border: #000000 1px solid;
+			}
+			.father div{
+				float: left;
+			}
+			.a{
+				width: 150px;
+				height: 150px;
+				background-color: #008000;
+				
+			}
+			.b{
+				width: 150px;
+				height: 150px;
+				background-color: red;
+			}
+			.c{
+				width: 150px;
+				height: 150px;
+				background-color: blue;
+			}
+			span{
+				float: left;
+				height: 100px;
+				width: 100px;
+				border: #000000 1px solid;
+			}
+			.one{
+				height: 50px;
+				border: 1px solid black;
+				float: left;
+			}
+			.sort{
+				width: 50px;
+				height: 50px;
+				border: #000000 1px solid;
+				float: right;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 只要是并列的 盒子用了 浮动 就都要用 -->
+		
+		<!-- 浮动跟随 父级容器 宽度不够 盒子会往下掉 先找兄弟的兄弟 贴边 如果没有 就找 父亲的贴-->
+		<!-- <div class="father">
+			<div class="a">大哥</div>
+			<div class="b">二哥</div>
+			<div class="c">小明</div>
+		</div> -->
+		
+		<!-- 行内元素 加了 浮动 就变行内块了  -->
+		
+		<!-- <span>哈哈</span> -->
+		
+		<!-- 块级元素本身默认 通栏 但是添加浮动   就会变成行内块  如果没有宽度 就由内容默认撑开-->
+		<!-- <div class="one">哈哈</div> -->
+		
+		<!-- 右浮动会变更顺序 -->
+		<div class="sort">1</div>
+		<div class="sort">2</div>
+		<div class="sort">3</div>
+		<div class="sort">4</div>
+	</body>
+</html>

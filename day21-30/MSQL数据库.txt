@@ -1,0 +1,408 @@
+==============================
+MySQL数据库
+==============================
+
+什么是数据库(database)
+数据库是数据管理的有效技术，是由一批数据构成的有序集合，这些数据被存放在结构化的数据表里。数据表之间相互关联，反映客观事物间的本质联系。
+【注】我们可以简单的认为：数据库，是通过面向对象的方式存储数据的一种工具。一个文件。
+数据是数据库中存储的基本对象，是按一定顺序排列组合的物理符号。数据有多种表现形式，可以是数字、文字、图像，甚至是音频或视频，它们都可以经过数字化后存入计算机。
+数据库具有统一的结构形式并存放于统一的存储介质内，是多种应用数据的集成，并可被各个应用程序所共享。
+例如，在学生档案中，学生信息是由学号、姓名、性别、年龄、籍贯、联系电话等特征组成的，那么这些具体的特征值所构成的一条记录就是一个学生的信息数据，例如“2016010102，张三，男，26，山西，计算机学院，185********”。
+数据库的存储结构
+数据库的存储结构是指数据库中的物理数据和逻辑数据的表示形式、物理数据和逻辑数据之间关系映射方式的描述。
+物理数据描述
+物理数据描述是指数据在存储设备上的存储方式，物理数据是实际存放在存储设备上的数据，这些数据也称为物理记录。根据物理记录存储的位置，又可以分为有序存储和无序存储。
+在物理数据描述中，使用的数据描述术语包括以下各项。
+?位（bit）：二进制的一个单位称为位，位只能取 1 或 0。
+?字节（byte）：8 个位称为一个字节，可以存放对应?ASCII?码的一个字符。
+?字（word）：若干个字节组成一个字。一个字所含的二进制的位数称为字长，许多计算机的字长是不同的，例如计算机的字长可以是 8 位、16 位、24 位、32 位等。
+?块（block）：内存储器和外存储器交换信息的最小单位，又称为物理块或物理记录，每块的大小通常为 256 字节、512 字节、1024 字节等。
+?卷（volume）：一台输入输出设备所能装载的全部有用信息，例如磁带机的一盘磁带即为一卷，磁盘设备的一个盘组也是一卷。
+?无序存储（unordered）：数据记录按照插入的顺序进行存储。
+逻辑数据描述
+逻辑数据描述是指用户或程序员用于操作的数据形式，逻辑数据是一种抽象的概念，是对客观现实世界的反映和记录，这些数据也可以称为逻辑记录。
+逻辑数据包含两个层次，一个层次是对客观现实信息世界的描述，另一个层次是对数据库管理系统中数据的描述。
+
+在对客观现实信息世界的描述中，使用的术语包括以下几项。
+?实体（entity）：客观现实存在的东西使用实体来描述。实体既可以是具体的、有形的对象，也可以是抽象的、无形的对象。例如，一本书是一个有形对象，一次借书过程则是一个无形的对象。
+?实体集（entities）：特性完全相同的同类实体的集合称为实体集。例如，一个图书馆所有的书籍是一个实体集，该图书馆的所有借书过程也是一个实体集。
+?属性（attribute）：实体的特性称为属性。每个属性都有一个值域，这些值域可以是整数类型、浮点数类型、字符类型或日期类型等。例如，实体书的属性包括书名、书号、出版日期、页数、价格以及出版社等，这些属性对应的值域分别为字符类型、字符类型、日期类型、整数类型、浮点数类型和字符类型等。
+?标识符（identifier）：能够唯一地标识每个实体的属性或属性集。例如，书的书号属性是实体书的标识符，借书过程实体的标识符包括借书证号、书号两个属性。
+、
+?数据项（data item）：也称为字段（field），标记实体属性的可以命名的最小信息单位，数据项的命名一般采用属性的描述性名称。这些名称可以是中文、英文或汉语拼音。
+?元组（tuple）：也称为记录（record），数据项的集合称为元组。一个元组表示一个具体的实体。
+?关系（relation）：在关系型数据库系统中，同一类元组所在的集合称为关系。关系适用于描述实体集，它包括一个实体集的所有元组。例如，所有的图书可以组成一个 books 关系。
+?键码（key）：在关系型数据库系统中，能够唯一地标识关系中每个元组的数据项或数据项的组合称为关系的键码。
+
+客观实体经过两层逻辑数据的描述，最后转变成实际存储的物理数据。
+数据库在开发中的作用
+从数据库系统应用角度来看，数据库系统常见的运行与应用结构有：客户端/服务器结构、浏览器/服务器结构。
+在客户端/服务器（Client/Server，C/S）结构中，数据库的使用者（如 DBA、程序设计者）通过命令行客户端、图形化界面管理工具或应用程序等连接到数据库管理系统，可以通过数据库管理系统查询和处理存储在底层数据库中的各种数据。
+数据库使用者与命令行客户端、图形化界面管理工具或应用程序等直接交互，而不与数据库管理系统直接联系。
+在这种结构中，命令行客户端、图形化界面管理工具或应用程序等称为“客户端”或“前台”，主要完成与数据库使用者的交互任务；而数据库管理系统则称为“服务器”或“后台”，主要负责数据管理。这种结构经常被称为“C/S”结构。
+在客户端/服务器模式中，客户端和服务器可以同时工作在同一台计算机上，这种工作方式称为“单机方式”；也可以“网络方式”运行，即服务器被安装和部署在网络中某一台或多台主机上。
+数据库能有效存储数据，读取数据、查找数据更是方便，其实那些管理软件就是通过软件的界面向内部的数据库进行数据的增、删、改、查操作。
+
+数据库系统
+数据库管理系统（Database Management System，DBMS）是位于操作系统与用户之间的一种操纵和管理数据库的软件，按照一定的数据模型科学地组织和存储数据，同时可以提供数据高效地获取和维护。
+DBMS的主要功能包括以下几个方面。
+1) 数据定义功能
+2) 数据操纵功能
+3) 数据库的运行和管理
+4) 提供方便、有效地存取数据库信息的接口和工具
+5) 数据库的建立和维护功能
+数据库系统结构关系如图所示：
+
+
+MySQL的优势
+?使用 C 和?C++?编写，并使用多种编译器进行测试，保证源代码的可移植性。
+?支持 AIX、FreeBSD、HP-UX、Linux、Mac OS、NovellNetware、OpenBSD、OS/2 Wrap、Solaris、Windows 等多种操作系统。
+?为多种编程语言提供了 API。这些编程语言包括 C、C++、Python、Java、Perl、PHP、Eiffel、Ruby 和 Tcl 等。
+?支持多线程，充分利用 CPU 资源。
+?优化的 SQL 查询算法，有效地提高查询速度。
+?既能够作为一个单独的应用程序应用在客户端服务器网络环境中，也能够作为一个库而嵌入其他的软件中。
+?提供多语言支持，常见的编码如中文的 GB 2312、BIG 5，日文的 Shift_JIS 等都可以用作数据表名和数据列名。
+?提供 TCP/IP、ODBC 和 JDBC 等多种数据库连接途径。
+?提供用于管理、检查、优化数据库操作的管理工具。
+?支持大型的数据库。可以处理拥有上千万条记录的大型数据库。
+?支持多种存储引擎。
+SQL语句
+【注】MySQL通过SQL语句进行数据库操作，SQL具有如下特点
+1.SQL语句大小写不敏感，因为一般数据的名称，表格的名称以及数据中字符串数据往往使用小写，所以，很多时候，我们使用大写字母执行SQL语句的命令，以区分SQL命令和数据内容。
+2.SQL语句每一句都是用；结尾的。如果过没有写分号，即使换行，语句仍然认为是一句。
+3.在填写数据库名，表单名，字符集名甚至是引擎名的时候，可以添加双引号
+
+创建数据库
+CREATE DATABASE [IF NOT EXISTS] <数据库名>
+[[DEFAULT] CHARACTER SET <字符集名>] [[DEFAULT] COLLATE <校对规则名>]
+
+mysql> CREATE DATABASE IF NOT EXISTS tar
+    -> DEFAULT CHARACTER SET utf8est_db_ch		# utf-8字符集
+    -> DEFAULT COLLATE utf8_chinese_ci;			# 支持简体中文
+
+查看数据库
+SHOW DATABASES [LIKE '数据库名']
+
+mysql> SHOW DATABASES LIKE '%test%';
+
+删除数据库
+DROP DATABASE [ IF EXISTS ] <数据库名>
+
+DROP DATABASE IF EXISTS test_db_del;
+
+选择数据库
+USE <数据库名>
+mysql> USE test_db;
+
+存储引擎
+【注】数据库存储引擎是数据库底层软件组件，数据库管理系统使用数据引擎进行创建、查询、更新和删除数据操作。不同的存储引擎提供不同的存储机制、索引技巧、锁定水平等功能，使用不同的存储引擎还可以获得特定的功能。
+【注】InnoDB 事务型数据库的首选引擎，支持事务安全表（ACID），支持行锁定和外键。MySQL 5.5.5 之后，InnoDB 作为默认存储引擎。
+MySQL支持的存储引擎有 InnoDB、MyISAM、Memory、Merge、Archive、Federated、CSV、BLACKHOLE 等。可以使用【SHOW ENGINES】语句查看系统所支持的引擎类型0。
+
+设置默认的存储引擎
+SET default_storage_engine=< 存储引擎名 >
+
+MySQL?常见数据类型
+【注】数据库是一种“面向对象”的数据存储方式。在数据库的表单当中，数据是列的组合，一个列，是一条单一的数句，多个列，组成了一个对象(在MySQL中称为记录/record)。
+
+在 MySQL 中常见的数据类型如下：
+1) 整数类型  存储数字数据
+包括 TINYINT(1)、SMALLINT(2)、MEDIUMINT(3)、INT(4)、BIGINT(8)，浮点数类型 FLOAT 和 DOUBLE，定点数类型 DECIMAL。
+2) 日期/时间类型	  存储时间
+包括 YEAR、TIME、DATE、DATETIME 和 TIMESTAMP。
+类型名称		日期格式				日期范围					存储需求
+YEAR				YYYY			1901 ~ 2155					1 个字节
+TIME			HH:MM:SS			-838:59:59 ~ 838:59:59		3 个字节
+DATE			YYYY-MM-DD			1000-01-01 ~ 9999-12-3		3 个字节
+DATETIME		YYYY-MM-DD HH:MM:SS	
+1000-01-01 00:00:00 ~ 9999-12-31 23:59:59										8 个字节
+TIMESTAMP		YYYY-MM-DD HH:MM:SS	
+1980-01-01 00:00:01 UTC ~ 2040-01-19 03:14:07 UTC	
+4 个字节
+3) 字符串类型	存储任意数据
+包括 CHAR、VARCHAR、BINARY、VARBINARY、BLOB、TEXT、ENUM 和 SET 等。
+4) 二进制类型	存储小型的图片，音频，归档文件等数据
+包括 BIT、BINARY、VARBINARY、TINYBLOB、BLOB、MEDIUMBLOB 和 LONGBLOB。
+
+类型名称	说明	存储需求
+CHAR(M)	固定长度非二进制字符串	M?字节，1<=M<=255
+VARCHAR(M)	变长非二进制字符串	L+1字节，在此，L<?=?M和?1<=M<=255
+TINYTEXT	非常小的非二进制字符串	L+1字节，在此，L<2^8
+TEXT	小的非二进制字符串	L+2字节，在此，L<2^16
+MEDIUMTEXT	中等大小的非二进制字符串	L+3字节，在此，L<2^24
+LONGTEXT	大的非二进制字符串	L+4字节，在此，L<2^32
+ENUM	枚举类型，只能有一个枚举字符串值	1或2个字节，取决于枚举值的数目 (最大值为65535)
+SET	一个设置，字符串对象可以有零个或 多个SET成员	1、2、3、4或8个字节，取决于集合 成员的数量（最多64个成员）
+
+创建表单
+CREATE TABLE [IF NOT EXISTS] <表名> ([表定义选项])[表选项][分区选项];
+其中，[表定义选项]的格式为：
+<列名1> <类型1> [,…] <列名n> <类型n>
+
+mysql> CREATE TABLE tb_emp1
+    -> (
+    -> id INT(11) PRIMARY KEY,	# 主键列 唯一标识，这一列的数据不能重复
+    -> name VARCHAR(25),
+    -> deptId INT(11),
+    -> salary FLOAT
+-> );
+
+mysql> CREATE TABLE tb_emp4
+    -> (
+    -> id INT(11),
+    -> name VARCHAR(25),
+    -> deptId INT(11),
+    -> salary FLOAT,
+    -> PRIMARY KEY(id)		# 在后面规定谁是主键列
+    -> );
+
+mysql> CREATE TABLE tb_emp5
+    -> (
+    -> name VARCHAR(25),
+    -> deptId INT(11),
+    -> salary FLOAT,
+    -> PRIMARY KEY(id,deptId)		# 两个值作为主键列，单个值可以重复，但是两个值组成的元组不能重复
+    -> );
+
+mysql> CREATE TABLE tb_dept2
+    -> (
+    -> id INT(11) PRIMARY KEY,
+    -> name VARCHAR(22) UNIQUE,	# 单独声明某一列不能重复
+    -> location VARCHAR(50)
+    -> );
+
+mysql> CREATE TABLE tb_dept3
+    -> (
+    -> id INT(11) PRIMARY KEY,
+    -> name VARCHAR(22),
+    -> location VARCHAR(50) DEFAULT 'Beijing'  # 默认值
+    -> );
+
+mysql> CREATE TABLE tb_dept4
+    -> (
+    -> id INT(11) PRIMARY KEY,
+    -> name VARCHAR(22) NOT NULL,			# 声明某个值不能是空
+    -> location VARCHAR(50)
+    -> );
+
+CREATE TABLE `tb_emp1` (
+  `id` int(11) DEFAULT NULL,
+  `name` varchar(25) DEFAULT NULL,
+  `deptId` int(11) DEFAULT NULL,
+  `salary` float DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+查看表结构
+DESCRIBE <表名>;/DESC <表名>;
+
+修改表单
+ALTER TABLE <表名> [修改选项]
+修改选项的语法格式如下：
+{ ADD COLUMN <列名> <类型>
+| CHANGE COLUMN <旧列名> <新列名> <新列类型>
+| ALTER COLUMN <列名> { SET DEFAULT <默认值> | DROP DEFAULT }
+| MODIFY COLUMN <列名> <类型>
+| DROP COLUMN <列名>
+| RENAME TO <新表名> }
+
+添加列/添加字段
+ALTER TABLE <表名> ADD <新字段名> <数据类型> [约束条件] [FIRST|AFTER 已存在的字段名]；
+mysql> ALTER TABLE tb_emp1
+    -> ADD COLUMN col1 INT FIRST;
+
+修改字段数据类型
+ALTER TABLE <表名> MODIFY <字段名> <数据类型>
+mysql> ALTER TABLE tb_emp1
+    -> MODIFY name VARCHAR(30);
+
+删除字段
+ALTER TABLE <表名> DROP <字段名>；
+mysql> ALTER TABLE tb_emp1
+    -> DROP col2;
+
+修改字段名称
+ALTER TABLE <表名> CHANGE <旧字段名> <新字段名> <新数据类型>；
+mysql> ALTER TABLE tb_emp1
+    -> CHANGE col1 col3 CHAR(30);
+
+修改列，添加默认值
+ALTER TABLE <数据表名>
+CHANGE COLUMN <字段名> <数据类型> DEFAULT <默认值>;
+mysql> ALTER TABLE tb_dept3
+    -> CHANGE COLUMN location
+    -> location VARCHAR(50) DEFAULT 'Shanghai';
+
+删除默认值
+ALTER TABLE <数据表名>
+CHANGE COLUMN <字段名> <字段名> <数据类型> DEFAULT NULL;
+mysql> ALTER TABLE tb_dept3
+    -> CHANGE COLUMN location
+    -> location VARCHAR(50) DEFAULT NULL;
+
+设置主键列
+ALTER TABLE <数据表名> ADD PRIMARY KEY(<列名>);
+mysql> ALTER TABLE tb_emp2
+    -> ADD PRIMARY KEY(id);
+
+
+修改表名
+ALTER TABLE <旧表名> RENAME [TO] <新表名>；
+mysql> ALTER TABLE tb_emp1
+    -> RENAME TO tb_emp2;
+
+删除表单
+DROP TABLE [IF EXISTS] <表名> [ , <表名1> , <表名2>] …
+mysql> DROP TABLE tb_emp3;
+
+查看表单约束
+SHOW CREATE TABLE <数据表名>;
+SHOW CREATE TABLE tb_emp8;
+
+插入数据
+INSERT INTO <表名> [ <列名1> [ , … <列名n>] ]
+VALUES (值1) [… , (值n) ];
+
+mysql> INSERT INTO tb_courses
+    -> (course_id,course_name,course_grade,course_info)
+    -> VALUES(1,'Network',3,'Computer Network');
+
+mysql> INSERT INTO tb_courses
+    -> (course_name,course_info,course_id,course_grade)
+    -> VALUES('Database','MySQL',2,3);
+
+修改数据
+UPDATE <表名> SET 字段 1=值 1 [,字段 2=值 2… ] [WHERE 子句 ]
+[ORDER BY 子句] [LIMIT 子句]
+mysql> UPDATE tb_courses_new
+    -> SET course_grade=4;
+
+mysql> UPDATE tb_courses_new
+    -> SET course_name='DB',course_grade=3.5
+    -> WHERE course_id=2;
+
+删除数据
+DELETE FROM <表名> [WHERE 子句] [ORDER BY 子句] [LIMIT 子句]
+mysql> DELETE FROM tb_courses_new;
+mysql> DELETE FROM tb_courses
+    -> WHERE course_id=4; 
+
+去除重复
+SELECT DISTINCT <字段名> FROM <表名>;
+mysql> SELECT  DISTINCT age
+    -> FROM tb_students_info;
+
+设置表别名
+<表名> [AS] <别名>
+mysql> SELECT stu.name,stu.height
+    -> FROM tb_students_info AS stu;
+
+设置列别名
+<列名> [AS] <列别名>
+mysql> SELECT name AS student_name,
+    -> age AS student_age
+    -> FROM tb_students_info;
+
+【注】表别名是通过给表设置别名，简化查询命令的复杂度，简化操作。列别名，则是为了在搜索结束后，将筛选到的数据按照制定的列名进行显示。
+
+限制查询结果的范围
+<LIMIT> [<位置偏移量>,] <行数>
+mysql> SELECT * FROM tb_students_info LIMIT 4;
+mysql> SELECT * FROM tb_students_info LIMIT 3,5;
+
+对查询结果进行排序
+ORDER BY {<列名> | <表达式> | <位置>} [ASC|DESC]
+mysql> SELECT * FROM tb_students_info ORDER BY height;
+mysql> SELECT name,height
+    -> FROM tb_students_info
+    -> ORDER BY height,name;
+mysql> SELECT name,height FROM tb_student_info ORDER BY height DESC,name ASC;
+
+条件筛选
+WHERE <查询条件> {<判定运算1>，<判定运算2>，…}
+mysql> SELECT name,height
+    -> FROM tb_students_info
+    -> WHERE height=170;
+
+mysql> SELECT name,age
+    -> FROM tb_students_info
+    -> WHERE age<22;
+
+mysql> SELECT * FROM tb_students_info
+    -> WHERE age>21 AND height>=175;
+
+mysql> SELECT name FROM tb_students_info
+    -> WHERE name LIKE 'T%';
+
+mysql> SELECT name FROM tb_students_info
+    -> WHERE name LIKE '____y';
+
+正则表达式查询
+mysql> SELECT * FROM tb_departments
+    -> WHERE dept_name REGEXP '^C';
+
+
+内链接查询
+mysql> SELECT id,name,age,dept_name
+    -> FROM tb_students_info,tb_departments
+    -> WHERE tb_students_info.dept_id=tb_departments.dept_id;
+
+mysql> SELECT id,name,age,dept_name
+    -> FROM tb_students_info INNER JOIN tb_departments
+    ->ON tb_students_info.dept_id=tb_departments.dept_id;
+
+子查询
+mysql> SELECT name FROM tb_students_info
+    -> WHERE dept_id IN
+    -> (SELECT dept_id
+    -> FROM tb_departments
+    -> WHERE dept_type= 'A' );
+
+分组查询
+GROUP BY { <列名> | <表达式> | <位置> } [ASC | DESC];
+mysql> SELECT dept_id,GROUP_CONCAT(name) AS names
+    -> FROM tb_students_info
+    -> GROUP BY dept_id;
+
+
+数据库备份
+mysql> SELECT * FROM test_db.tb_students_info
+    -> INTO OUTFILE 'C:/ProgramData/MySQL/MySQL Server 5.7/Uploads/file.txt'
+    -> FIELDS TERMINATED BY '"'
+    -> LINES TERMINATED BY '?';
+
+数据库恢复
+mysql> LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 5.7/
+Uploads/file.txt'
+    -> INTO TABLE test_db.tb_students_copy
+    -> FIELDS TERMINATED BY ','
+    -> OPTIONALLY ENCLOSED BY '"'
+    -> LINES TERMINATED BY '?';
+
+创建用户
+CREATE USER <用户名> [ IDENTIFIED ] BY [ PASSWORD ] <口令>
+mysql> CREATE USER 'james'@'localhost'
+    -> IDENTIFIED BY '123456';
+
+修改用户
+RENAME USER <旧用户> TO <新用户>
+mysql> RENAME USER james@'localhost'
+    -> TO jack@'localhost';
+
+SET PASSWORD [ FOR <用户名> ] =
+{
+    PASSWORD('新明文口令')
+    | OLD_PASSWORD('旧明文口令')
+    | '加密口令值'
+}
+
+mysql> SET PASSWORD FOR 'jack'@'localhost'=
+    -> PASSWORD('lion');
+
+
+用户授权
+GRAND privileges ON <数据库名>.<表单名> TO <用户名>@<用户IP>
+mysql> GRANT INSERT, SELECT ON database02.table_01 TO 'ace'@'192.168.53.165';
+mysql> GRANT ALL ON *.* TO 'ace'@'192.168.53.165';
+mysql> FLUSH PRIVILEGES;			# 刷新数据库的权限设置
+Ubuntu16 需进行下面设置
+进入修改 /etc/mysql/mysql.conf.d/mysqld.cnf ， 将bind-address 这一行注释掉。  然后重启mysql： sudo service mysql restart

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+	</head>
+	<body>
+		<h1>第二页</h1>
+		<button onclick="go_to_3()">跳转到第三页</button>
+		<button onclick="for_ward()">前进</button>
+		<button onclick="go_back()">后退</button>
+
+
+		<script type="text/javascript">
+
+			function go_to_3(){
+				// 跳到第三页
+				window.location.assign("03_第三页.html")
+			}
+			
+			//完成前进 和后退
+			//1.回退
+			function go_back(){
+				window.history.back()
+			}
+			//2.前进
+			function for_ward(){
+				window.history.forward()
+			}
+
+		</script>
+	</body>
+</html>

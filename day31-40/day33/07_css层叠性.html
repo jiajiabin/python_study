@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			/*
+			标签的权重是 : 1
+			类的权重是 : 10
+			
+			*/
+			p.jay{  /*标签 + 类名  11*/
+				font-size: 15px;
+				color: #333333;
+			}
+			.jay{   /*10的权重*/
+				font-size: 30px;
+				color: #FF0000;
+			}
+			
+			
+			.cxk_2{
+				font-size: 30px;
+				color: #333333;
+			}
+			.cxk{ 
+				font-size: 15px;
+				color: #FF0000;
+			}
+			/* 当权重 相同的时候 就代码从上往下走 下面的会进行覆盖*/
+			
+		</style>
+	</head>
+	<body>
+		<p class="jay">周杰伦 </p>
+		<p class="cxk cxk_2">蔡徐坤</p>
+	</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+
+			// 页面加载响应事件:onload   在页面 所有的内容 加载完成之后再执行
+			window.onload = function  () {
+				//根据id获取 元素对象
+				// var box_1 = document.getElementById("box1")
+				// console.log(box_1)
+				
+
+
+				
+			
+				//根据class属性拿 元素对象 拿到的是一个数组 不是一个单一的对象 就算只有一个 他还是一个数组 我们如果需要操作 需要单个的取值
+				// var div_arr = document.getElementsByClassName("divBox")
+				// console.log(div_arr)  // 多个数据的集合
+				//div_arr.innerHTML = "哈哈"  //不行
+				// div_arr[0].innerHTML = "哈哈"  // 通过类名取到的对象  然后去出来 单个操作
+				// for(var i = 0;i<div_arr.length;i++){
+				// 	div_arr[i].innerHTML="哈哈"
+				// }
+				
+				
+				
+				
+				
+				
+				//根据name属性拿 获取元素对象
+				// var input_arr = document.getElementsByName("inputText")
+				// console.log(input_arr)
+				// input_arr[0].value = "钢铁侠"
+
+				//根据标签的名字拿
+				// var div_arr = document.getElementsByTagName("div")
+				// console.log(div_arr)
+
+
+				//注意 除了通过id获取对象  直接 就是一个 DOM元素  其他 的 几个拿到都是一个集合
+
+
+			}
+	
+			
+		
+		
+
+
+
+	</script>
+</head>
+<body>
+	<div id="box1"></div>
+	<div class="divBox"></div>
+	<div class="divBox"></div>
+	<div class="divBox"></div>
+
+
+	<input type="text" name="inputText">
+	<input type="text" name="inputText">
+	<input type="text" name="inputText">
+</body>
+</html>

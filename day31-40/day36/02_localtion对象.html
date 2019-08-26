@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<h1>首页</h1>
+	<button onclick="func()">点我跳到红色页面</button> 
+	<button onclick="func2()">点我重新加载</button>  
+	
+
+	<!-- onclick 属性 是一个点击事件 当点击事件被触发  函数名()-->
+
+	<script type="text/javascript">
+	
+			//location 控制浏览器的导航栏 可以实现页面的跳转
+		function func(){
+			//href 存储路径的  修改路径值
+			// window.location.href = "02_红色页面.html"
+			// location.assign("02_红色页面.html")  // 也是进行页面切换的  参数1:路径
+			// window.location.replace("02_红色页面.html")  // 浏览器 不产生历史记录 无法前进或者后退
+		}
+		
+		function func2(){
+			location.reload()  // 如果写了 true 参数 会在缓存找到 资源 重新加载  一般不写 true
+		}
+	
+		
+		//location 的href属性
+		//location 的assign方法
+		//location 的replace方法
+		//location 的reload(true)方法
+
+
+
+	</script>
+</body>
+</html>

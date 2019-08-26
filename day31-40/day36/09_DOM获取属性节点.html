@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+		
+		window.onload = function  () {
+			// 获取属性节点
+			// 方式1:任何官方的 属性节点 都可以通过  元素对象.属性名来获取
+			// 1.先获取元素对象
+			var input = document.getElementsByName("inputText")
+			// console.log(input)
+			// input[0].value = "黑寡妇"
+			// console.log(input[0].placeholder)
+			// input[0].placeholder = "请输入一个英雄的名字"
+			// console.log(input[0].my)  // 说白了 自定义属性 不能这么取值
+
+			
+			//通过方法进行 操作属性节点
+			// 获取非官方属性节点  : 通过方法来获取  对象.getAttribute(字符串:属性名)
+			console.log(input[0].getAttribute("my"))
+
+			// 参数1:属性名
+			// 参数2:新的值
+			// 参数1 的 属性名  存在就 修改 不存在 就增加
+			input[0].setAttribute("my","奈斯")
+			console.log(input[0].getAttribute("my"))
+			
+			input[0].setAttribute("my_2","nice")
+			
+			
+			
+
+
+
+		}
+	</script>
+</head>
+<body>
+	<input type="text" name="inputText" placeholder="请输入你的名字" id="input_1"  my="good">
+</body>
+</html>

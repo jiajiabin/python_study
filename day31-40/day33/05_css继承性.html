@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			div{
+				height: 200px; /* 不能继承的*/
+				width: 300px;
+				
+				background: #B299B2;  /*不能继承*/
+				font-size: 15px;  /*可以的*/
+				color: red;
+				font-weight: bold; /*可以*/
+				text-decoration: none; /*可以的*/
+				line-height: 50px;  /*可以的*/
+				border: #000000 1px solid;  /*不可以*/
+				/* font系列 text系列 line-height可以继承*/
+			}
+			p{
+				height: 50px;
+				width: 200px;
+				background: #008000;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div>
+			<p>沉默年代 或许不该  太遥远的相爱</p>
+			<a href="">点我</a>   <!--a 不能继承 颜色 text-decoration-->
+		</div>
+	</body>
+</html>

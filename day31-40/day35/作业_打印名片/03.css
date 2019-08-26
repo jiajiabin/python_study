@@ -1,0 +1,15 @@
+.two1{
+	background-image: url(images/bg03.jpg);
+	padding-top: 120px;
+	padding-right: 40px;
+	width: 410px!important;
+	height: 140px!important;
+	color: #666666;
+	text-align: right;
+}
+h2{
+	display: inline-block;
+}
+p.a{
+	display: inline-block;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		#box1{
+			width: 200px;
+			height: 200px;
+			border: 1px solid black;
+			display: none;
+		}
+		
+	</style>
+	<script type="text/javascript">
+		
+		//window.onload   :等待页面结构 加载结束 再执行
+		// window.onload = function(){
+		// 	alert("弹窗1")
+		// 
+		// }
+		
+		
+		// alert("弹窗2")
+		// alert("弹窗3")
+		// alert("弹窗4")
+		// alert("弹窗5")
+		
+	
+		// 点击按钮 显示div
+		window.onload = function(){  // 所有的 js交互代码 都写在这里   js的入口函数
+			var box_1 = document.getElementById("box1")
+			// console.log(box_1)
+			var btn = document.getElementById("btn")
+			var flag = true  //初次标记 为 真
+			btn.onclick = function(){
+				// 一点 就显示 div
+				if(flag){   // 如果是真的 就 说明隐藏在  进入 逻辑 显示
+					console.log("触发显示点击事件")
+					box_1.style.display="block"  // 已经做完了显示
+					flag = false  // 标记变更
+				}else{  //变成 false 说明 已经显示了 需要隐藏
+					console.log("触发显示点击事件")
+					box_1.style.display="none"  // 做隐藏
+					flag=true  // 变更标记为true
+				}
+				
+			}
+			
+			// btn.onclick = function(){  //覆盖了
+			// 	// 一点 就显示 div
+			// 	console.log("触发隐藏点击事件")
+			// 	box_1.style.display="none"
+			// }
+				
+		}
+		
+	
+	
+		// window.onscroll 
+		// document.documentElement.scrollTop
+		
+	
+	
+	</script>
+</head>
+<body style="height: 10000px">
+	
+	<div id="box1"></div>
+	<button id="btn">点我呀</button>
+	
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.big{
+				width: 280px;
+				height: 255px;
+				border: #186B07 2px solid;
+				margin: 0 auto;
+			}
+			.head{
+				height: 40px;
+				background-image: url(bg.jpg);
+				color: white;
+				line-height: 40px;
+				text-indent: 1em;
+				font-size: 18px;
+			}
+			.kong{
+				display: inline-block;
+				width: 16px;
+			}
+			p{
+				padding: 6px;
+				padding-left: 20px;
+				}
+			.one0{padding-top: 12px;}
+			.one{
+				width: 164px;
+				height: 32px;
+			}
+			.two{
+				width: 75px;
+				height: 32px;
+			}
+			.three{
+				color: #666666;
+				font-size: 12px;
+				padding-left: 85px;
+				padding-top: 0px;
+				padding-bottom:6px;
+			}
+			.two0{padding-bottom: 9px;}
+			.last1, .last2{
+				width: 83px;
+				height: 32px;
+				color: white;
+				background-image: url(btnBg.jpg);
+				display: inline-block;
+				text-align: center;
+				line-height: 32px;
+				padding-top: 0;
+				border: none;
+			}
+			.last1{margin-left: 60px;}
+			.last2{margin-left: 18px;}
+		</style>
+	</head>
+	<body>
+		<div class="big">
+			<div class="head">用户登陆</div>
+			<p class="one0">用户名：<input type="text" class="one"></p>
+			<p>密<span class="kong"></span>码：<input type="text" class="one"></p>
+			<p class="two0">验证码：<input type="text" class="two"></p>
+			<p class="three"><input type="checkbox" name="" style="vertical-align: middle;">&nbsp;记住密码</p>
+			<input  class="last1" type="button" value="登陆">
+			<input  class="last2" type="button" value="重置">
+
+		</div>
+	</body>
+</html>

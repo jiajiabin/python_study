@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		#box1{
+
+			height: 200px;
+			width: 200px;
+			background: red;
+		}
+		#box2{
+
+			height: 200px;
+			width: 200px;
+			background: blue;
+		}
+		#box3{
+
+			height: 200px;
+			width: 200px;
+			background: green;
+		}
+		#box4{
+
+			height: 200px;
+			width: 200px;
+			background: pink;
+		}
+
+
+
+	</style>
+</head>
+<body>
+	<div id="box1" onclick="func1()"></div>
+	<div id="box2" onclick="alert('box2')"></div>
+	
+	<div id="box3"></div>
+	<div id="box4"></div>
+
+	<script type="text/javascript">
+		
+		function  func1(argument) {
+			alert("box1")
+		}
+
+
+		// 方式3:通过获取元素对象  来实现绑定事件
+		// 对象.事件名 = 函数名
+		var btn = document.getElementById("box3")
+			
+		btn.onclick = function(){
+			
+		}
+
+
+		//方式4:给元素对象添加监听
+		// 元素对象.addEventListener("事件名",函数名,false)    把on
+
+
+
+
+
+	</script>
+</body>
+</html>

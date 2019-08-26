@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			
+			/*
+			
+			1.块级显示:独占一行 可以修改宽高
+			2.行级显示:一行可以有多个 不能改宽高
+			3.行内块:可以修改宽高 也可以一行显示多个
+			h p div  默认显示方式 块级
+			span 默认是行级
+			*/
+		   div{
+			   height: 100px;
+			   width: 100px;
+			   background: blue;
+			   /* display: inline; */  /*改成 行内*/
+			   display: inline-block;  /*改成行内块*/
+		   }
+		   span{
+		   		height: 100px;
+		   		width: 100px;
+				background: blue;
+				display: block;    /*改成块*/
+		   			  
+		   }
+		</style>	
+		</head>
+	<body>
+		<div>哈哈</div>
+		<div>呵呵</div>
+		
+		<span>嘿嘿</span>
+		<span>嘻嘻</span>
+	</body>
+</html>

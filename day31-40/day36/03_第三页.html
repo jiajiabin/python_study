@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<h1>第三页</h1>
+	<button onclick="back_index()">回到首页</button>
+	<script type="text/javascript">
+		
+		function back_index(){
+			window.history.go(-2)   //  -3   -2    -1       0:当前页   1    2    3    4
+								  //         首页   第二页 
+		}
+
+		
+	</script>
+</body>
+</html>

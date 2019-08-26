@@ -1,0 +1,67 @@
+﻿
+复习点：
+1.html 的 全局结构标签(基本结构)：
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+</html>
+
+2.DOCTYPE:文件类型
+列表的分类:有序和无序、自定义
+列表的属性:disc,square,circle,1,i,I,A,a
+表格的基本语法:
+<tr>
+	<td>姓名:</td>
+	<td>年龄:</td>
+	<td>性别:</td>
+</tr>
+
+表格的各种属性:width,height,border,cellpadding,cellspacing
+
+表格的跨行合并还有跨列合并(扩展学习):
+colspan,rowspan
+表格扩展案例：4*4的表格  合并 第4个 和第8个 单元格  ，合并19和20 个单元格
+html 表格的align属性(扩展学习): 居中
+html 表格的vertical-align属性(扩展学习): 中线对齐
+表单提交元素的必须属性:type，name
+表单的各种元素:type,checked,name, value,placeholder
+关于文字属性，需要改变文字的字体风格 例如 我要改成 黑体 宋体 。。。。。
+font-weight, font-family
+图片标签的属性
+src,title,alt,width,height
+
+
+关于css的：
+css的三种引入方式
+<style></style>         <link rel="stylesheet" type="text/css" href="">
+<div style"">
+
+css的所有选择器 交集选择器，并集选择器，子集选择器，伪类选择器
+字体的属性:size，style，famaly,weight
+text的属性indent,align，decoration
+行高属性.line-height
+css的常见块级元素div,p,h1h6,
+css的常见行级元素span,input,img,
+变更默认的显示方式
+*{margin: 0;padding: 0;}
+css的三大特性：继承，优先，层叠
+a标签能不能继承 color 和 text-decoration。line-height
+css的类选择器 权重  id的权重 100
+css哪个选择器权重最大！important
+css背景的分裂属性有哪些：color，image，position，repeat
+css背景位置 属性是：background-position ,两个参数是什么x，y
+css内边距：padding
+css外边距：margin
+css文本元素水平居中：text-align:center
+css文本元素垂直居中:  line-height:height
+css非行级盒子水平居中:margin:0 auto
+去除列表默认的样式:list-style: none
+大盒子(400*400) 套 小盒子(200*200) 用内边距让 小盒子居中   padding:100px
+通栏显示的盒子 加内边距 会不会改变盒子宽度：不会
+
+

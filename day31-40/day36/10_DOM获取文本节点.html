@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		//入口函数
+		onload=function(){
+			//1.先获取元素节点
+			var box1 = document.getElementById("box1")
+			console.log(box1.innerHTML)  //拿子级 结构
+			console.log(box1.innerText)  //拿到所有子级的文本
+		}
+		
+	</script>
+</head>
+<body>
+	<div id="box1">
+		<div>
+			我是一个文本
+			<div>我是一个嵌套的文本</div>
+		
+		</div>
+	</div>
+</body>
+</html>

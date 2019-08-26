@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			h1{
+				text-align: center;  /*误解:以为是针对于网页居中  针对于容器本身的宽度*/
+			}
+			
+			div{
+				
+				width: 500px;
+			}
+			.big{
+				width: 200px;
+				height: 200px;
+				background: red;
+				/* text-align: center; */  /*不能操作div盒子*/
+			}
+			.small{
+				width: 100px;
+				height: 100px;
+				background: green;
+				margin: 0 auto;    /*找父盒子的宽度  去居中*/
+			}
+			
+			.last{
+				width: 100px;
+				height: 100px;
+				background: blue;
+				margin: 0 auto;  /* 针对父盒子 居中   他的父盒子就是 body  所以直接针对于网页居中*/
+			}
+			
+			
+		</style>
+	</head>
+	<body>
+		<div>
+			<h1>千峰</h1>
+		</div>
+		
+		
+		<div class="big">
+			
+			<div class="small"></div>
+		</div>
+		
+		<div class="last"></div>
+		
+	</body>
+</html>
